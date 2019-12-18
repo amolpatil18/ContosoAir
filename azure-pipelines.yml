@@ -33,9 +33,4 @@ steps:
       Contents: '*.json'
       TargetFolder: $(build.artifactstagingdirectory)/Templates
   - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: drop'
-    condition: always()
-    inputs:
-      pathToPublish: "npm/cache/_logs"
-      artifactName: log
-      artifactType: container
+    displayName: 'Publish Artifact'
