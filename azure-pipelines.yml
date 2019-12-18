@@ -36,6 +36,6 @@ steps:
     displayName: 'Publish Artifact: drop'
     condition: always()
     inputs:
-      pathToPublish: "C:\npm\cache\_logs"
+      pathToPublish: "npm/cache/_logs"
       artifactName: log
       artifactType: container
