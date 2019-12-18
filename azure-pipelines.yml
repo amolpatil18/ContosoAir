@@ -34,3 +34,8 @@ steps:
       TargetFolder: $(build.artifactstagingdirectory)/Templates
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
+    condition: always()
+    inputs:
+      pathToPublish: "C:\npm\cache\_logs"
+      artifactName: log
+      artifactType: container
